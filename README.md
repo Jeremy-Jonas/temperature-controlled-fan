@@ -12,7 +12,7 @@ At the beginning of the project I though about making a fan vent which could be 
 The circuit is really rather simple, in fact it would be a good example of when to use an Arduino Nano, but as I have a 12v power supply already going in to the enclosure for the lights I decided to just use an Arduino Uno so I can run it off the 12v I have available. 
 See the circuit diagram below for full details, you can see there are just 2 components added to the Uno, the LM35 temp sensor and a standard 5v relay breakout board to control the fan. I could have probably used a transistor for the fan control but I had the relay board spare and no transistors around.
 
-*placeholder for circuit diagram image*
+![Circuit Diagram](Temp-Controlled-Fan-Circuit.jpg)
 
 ## The Code
 The code is a mixture of my own and some I found online for how to calculate the temperature from the voltage that the LM35 returns. It's quite short as there's not much to the circuit, and it is almost certainly in need of a good refactor, but it works and I think it is really readable by humans too. Code is available in this repo if you want to have a look or download it for your own projects.

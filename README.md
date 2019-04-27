@@ -27,13 +27,14 @@ To test everything is working set the MINTEMP integer to a temperature just belo
 There really isn't much to say here, the whole point of the project was to make an automated fan which I can basically set and forget. Once you have it installed on your enclosure it should just take care of itself.
 
 ## Future
-At the moment the only way to get feedback about the temperature is to have the Uno connected via USB to a PC and run the serial monitor. I have some 4-digit 7-segment display modules on the way from China which I plan to use to display the current temperature in place of the current serial output. The first update of this project will be the inclusion of them.
+- [ ] At the moment the only way to get feedback about the temperature is to have the Uno connected via USB to a PC and run the serial monitor. I have some 4-digit 7-segment display modules on the way from China which I plan to use to display the current temperature in place of the current serial output. The first update of this project will be the inclusion of them.
 
-Once I have the 7-segment display I will design a 3D printable enclosure for the arduino and display to neaten everything up.
+- [x] ~~Once I have the 7-segment display I will design a 3D printable enclosure for the arduino and display to neaten everything up.~~
+I actually found it easier to mount the Arduino right next to the power supply coming in to the enclosure, and the 7-segment display next to the fan and manual override switch.
 
-I am planning to add a button to the Arduino circuit to allow the fan to be activated even if the set maximum temperature has not been exceeded. This would be useful for those days in winter when it's so cold that even PLA warps, it would allow me to shut the door of the enclosure to keep the cold out but also run the fan to stop too much heat building up in the enclosure.
+- [x] I am planning to add a button to the Arduino circuit to allow the fan to be activated even if the set maximum temperature has not been exceeded. This would be useful for those days in winter when it's so cold that even PLA warps, it would allow me to shut the door of the enclosure to keep the cold out but also run the fan to stop too much heat building up in the enclosure.
 
-I might look at perhaps adding a few buttons and some code to allow the user to set the MINTEMP and MAXTEMP values without having to change them in the sketch and re-upload it to the Arduino, however to stop the changed values being lost after a power cycle would I think require using the EEPROM on the Arduino which is beyond the scope of my current knowledge.
+- [ ] I might look at perhaps adding a few buttons and some code to allow the user to set the MINTEMP and MAXTEMP values without having to change them in the sketch and re-upload it to the Arduino, however to stop the changed values being lost after a power cycle would I think require using the EEPROM on the Arduino which is beyond the scope of my current knowledge.
 
 I will likely keep an eye on the temperature of the voltage drop circuitry on the Uno to make sure it isn't running too hot, and if so I will switch to using a Nano.
 
